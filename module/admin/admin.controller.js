@@ -22,7 +22,7 @@ exports.LoginAdmin = async (req, res) => {
 
         }
         else {
-          ResSuccess({ message: "Password Or Phone Number Wrong" }, res)
+          ResSuccess({ res: res, data: { message: "password wrong" } })
 
         }
 
